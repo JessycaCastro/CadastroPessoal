@@ -1,0 +1,236 @@
+<!-- Este é um método de documentação para vincular HTML e UTF-8 -->
+<!DOCTYPE html>
+<!-- "lang" ajuda a definir o idioma de um elemento, como, a língua em que elementos não-editáveis são escritos, ou a língua em que elementos editáveis devem ser escritos pelo usuário. -->
+<html lang="pt-br">
+
+  <!-- Este método abastece com metadados, título, links dos ícones, das fontes, do CSS, do JavaScript e o estilo interno -->
+<head>
+    <!-- Título -->
+    <title>Cadastro Pessoal</title>
+    <!-- Um metadado para submeter os caracteres estrangeiros corretamente -->
+    <meta charset="UTF-8">
+
+    <script>  
+      function msg1(){ 
+      alert("SEJA BEM VINDO!"); 
+      } 
+       
+      window.addEventListener("load",msg1); 
+      
+            // Uma função
+            function pergunta1() {
+              // Checa se quiser enviar no diálogo
+              if (confirm("Deseja enviar agora?")) 
+              {
+                return true;
+              }
+              // Senão
+              else 
+              {
+                return false;
+              }
+            }
+      
+            // Uma função para informar de limpar
+            function pergunta2() {
+              alert("Todos os campos serão apagados.");
+            } 
+      </script> 
+        <!-- Um metadado de autor -->
+    <meta name="author" content="Jéssyca Rodrigues de Castro Souza">
+</head>
+
+<body>
+        <!-- Cabeçalho  -->
+        <header>
+          <!-- Um título de primeiro grau -->
+          <h1>Seja bem-vindo a nosso sistema de cadastro pessoal</h1>
+          <!-- Parágrafos -->
+          <p>Por favor, preencha todos os campos do formulário.</p>
+          <br>
+        </header>
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Formulário, action é uma etiqueta para avançar para a próxima página caso seja enviado, e "get" é um método para capturar as informações -->
+      <form action="sucesso.html" method="get">
+        <!-- Grupo -->
+        <fieldset>
+          <!-- Legenda do grupo -->
+          <legend>Dados pessoais</legend>
+          <!-- Uma etiqueta de rótulo da caixa de entrada -->
+          <label for="nome">Nome:</label>
+          <!-- Uma caixa de entrada com um tipo como texto por exemplo, e também, com um identificador e nome pegados pela etiqueta "label". Placeholder significa uma informacão de exemplo e, required significa obrigatório -->
+          <input type="text" name="nome" placeholder="João" id="nome" required>
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" name="sobrenome" placeholder="Ribeiro" id="sobrenome" required>
+
+          <label for="cpf">CPF:</label>
+          <!-- maxlength significa limite de dígitos. Pode ser limite de dígitos de senhas, número do cartão, número de documentos, entre outros. -->
+          <input tipe="text" name="cpf" maxlength="11" placeholder="***254126**" id="cpf" required>
+
+          <label for="rg">RG:</label>
+          <input type="text" name="rg" maxlength="13" placeholder="RG" id="rg" required>
+
+          <label for="data">Data de nascimento:</label>
+          <!-- Uma caixa de entrada com um tipo como Data -->
+          <input type="date" name="data" placeholder="20/12/1990" id="data" required>
+
+          <label for="estadocivil">Estado civil:</label>
+          <!-- Um seletor de opções -->
+          <select name="estadocivil" id="estadocivil">
+            <option>Selecione...</option value="00">
+            <option>Solteiro (a)</option value="01">
+            <option>Casado (a)</option value="02">
+            <option>Divorciado (a)</option value="03">
+              <option>Viúvo (a)</option value="04">                
+          </select>
+
+          <label for="Telfone">Telefone fixo:</label>
+          <!-- Uma caixa de entrada com um tipo como telefone -->
+          <input type="tel" name="telefonefixo" placeholder="30000000" id="telfixo">
+
+          <label for="celular">Celular:</label>celular:</label>
+          <input type="tel" name="telcelular" placeholder="999999999" id="cel" required>
+        </fieldset>
+
+        <!-- Uma quebra de linha -->
+        <br>
+        <fieldset>
+<label for="profição">Qual é a sua profissão?</label>
+<input type="text" neme="profissão" id="profissão" placeholder="Cabelereiro" required>
+
+          <legend>Gênero</legend>
+          <label for="gf">Feminino</label>
+          <!-- Um seletor de escolha -->
+          <input type="radio" name="genero" id="gf" value="f">
+
+          <br>
+          <label for="gm">Masculino</label>
+          <input type="radio" name="genero" id="gm" value="m">
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="rua">Rua:</label>
+          <input type="text" name="rua" id="rua" required> <br>
+
+          <label for="numero">Número:</label>
+          <input type="text" name="numero" id="numero" required> <br>
+
+          <label for="Quadra">Quadra:</label>          
+          <input type="text" name="Quadra" id="Quadra" required> <br>
+           
+          <label for="Lote">Lote:</label>
+          <input type="text" name="Lote" id="Lote" required> <br>
+                    
+          <label for="bairro">Bairro:</label>
+          <input type="text" name="bairro" id="bairro" required> <br>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" required> <br>
+         
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado">
+            <option>Escolha seu estado...</option>
+            <option value="ac">Acre</option>
+            <option value="al">Alagoas</option>
+            <option value="am">Amazonas</option>
+            <option value="ap">Amapá</option>
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceará</option>
+            <option value="df">Distrito Federal</option>
+            <option value="es">Espírito Santo</option>
+            <option value="go">Goiás</option>
+            <option value="ma">Maranhão</option>
+            <option value="mt">Mato Grosso</option>
+            <option value="ms">Mato Grosso do Sul</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="pa">Pará</option>
+            <option value="pb">Paraíba</option>
+            <option value="pr">Paraná</option>
+            <option value="pe">Pernambuco</option>
+            <option value="pi">Piauí</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="rn">Rio Grande do Norte</option>
+            <option value="ro">Rondônia</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="rr">Roraima</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="se">Sergipe</option>
+            <option value="sp">São Paulo</option>
+            <option value="to">Tocantins</option>
+          </select>
+
+          <label for="cep">CEP: </label>
+          <input type="text" name="cep" maxlength="8" id="cep">
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Logim</legend>
+
+          <label for="email">e-mail:</label>
+          <!-- Uma caixa de entrada com um tipo como e-mail -->
+          <input type="e-mail" name="email" placeholder="joao@gmail.com" id="email" required>
+
+          <label for="senha">Senha:</label>
+          <!-- Uma caixa de entrada com um tipo como uma senha -->
+          <input type="password" name="senha" placeholder="xxxxxxxx" id="senha" required>
+
+          <label for="confirmsenha">Confirme a senha:</label>
+          <input type="password" name="confirmsenha" id="confirmsenha" required>
+        </fieldset>
+        <br>
+
+        <label for="obs">Informações complementares:</label>
+        <!-- Um corpo de mensagem -->
+        <textarea name="observacao" id="obs" placeholder="O que gostaria de complementar?"> </textarea>
+        <br>
+
+        <!-- Um botão com um método em JavaScript "onclick", que significa para clicar uma função -->
+        <input type="submit" name="enviar" onclick="pergunta1();" value="Enviar">
+
+        <!-- Um botoão de limpar todo o formulário com um método que clica uma função -->
+        <input type="reset" onclick="pergunta2();" value="Limpar">
+        <br>
+        <br>
+      </form>
+    </main>
+
+    <!-- Um rodapé -->
+    <footer>
+      <p>
+        © Jessyca Rodrigues de Castro Souza <br>
+        <br>
+        <!-- Links -->
+        <a href="https://www.linkedin.com/in/jessyca-castro-000b93220" target="_blank">Conecte-se comigo no Linkedin:</a><br>
+        <a href="https://github.com/JessycaCastro/CadastroPessoal" target="_blank">Meu projeto no GitHub:</a><br>
+        </p>
+         
+    </footer>
+
+    <!-- Um script interno em JavaScript -->
+    <script>
+      // Uma função
+      function pergunta1() {
+        // Checa se quiser enviar no diálogo
+        if (confirm("Deseja enviar agora?")) 
+        {
+          return true;
+        }
+        // Senão
+        else 
+        {
+          return false;
+        }
+      }
+
+      // Uma função para informar de limpar
+      function pergunta2() {
+        alert("Todos os campos serão apagados.");
+      }    </script>
+
+  </body>
+</html>
